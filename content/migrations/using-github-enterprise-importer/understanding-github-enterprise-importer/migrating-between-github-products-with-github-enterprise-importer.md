@@ -11,8 +11,6 @@ redirect_from:
   - /early-access/enterprise-importer/understanding-github-enterprise-importer/migrating-between-github-products-with-github-enterprise-importer
 ---
 
-{% data reusables.enterprise-migration-tool.release-phase %}
-
 ## About migrations between {% data variables.product.company_short %} products
 
 With {% data variables.product.prodname_importer_proper_name %}, you can migrate to {% data variables.product.prodname_ghe_cloud %}. For more information, see "[AUTOTITLE](/migrations/using-github-enterprise-importer/understanding-github-enterprise-importer/about-github-enterprise-importer)".
@@ -183,7 +181,6 @@ If you added the IP ranges for {% data variables.product.prodname_importer_prope
 
 For more information, see "[AUTOTITLE](/migrations/using-github-enterprise-importer/preparing-to-migrate-with-github-enterprise-importer/managing-access-for-github-enterprise-importer)."
 
-
 ### Managing {% data variables.product.prodname_GH_advanced_security %}
 
 If you enabled {% data variables.product.prodname_GH_advanced_security %} for the destination organization before migrating repositories, the settings for individual features were migrated. If not, you'll need to re-enable individual features after the migration. For more information, see "[AUTOTITLE](/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository)."
@@ -248,7 +245,7 @@ Teams are not migrated as part of a repository migration. You must manually recr
 
 1. Re-create teams. For more information, see "[AUTOTITLE](/organizations/organizing-members-into-teams/creating-a-team)."
 1. Add organization members to teams. For more information, see "[AUTOTITLE](/organizations/organizing-members-into-teams/adding-organization-members-to-a-team)."
-1. Give each team access to the repository. For more information, see "[AUTOTITLE](/organizations/managing-user-access-to-your-organizations-repositories/managing-team-access-to-an-organization-repository)."
+1. Give each team access to the repository. For more information, see "[AUTOTITLE](/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/managing-team-access-to-an-organization-repository)."
 
 ### Reclaiming mannequins
 

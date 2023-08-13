@@ -27,7 +27,7 @@ Depending on the policy settings configured at the enterprise level, an organiza
 
 {% data reusables.profile.access_org %}
 {% data reusables.profile.org_settings %}
-1. In the "Code planning, and automation" section of the sidebar, click **{% octicon "copilot" aria-label="The copilot icon" %} {% data variables.product.prodname_copilot_short %}**, and then click **Access**.
+1. In the "Code planning, and automation" section of the sidebar, click **{% octicon "copilot" aria-hidden="true" %} {% data variables.product.prodname_copilot_short %}**, and then click **Access**.
 1. Under "User permissions," to enable {% data variables.product.prodname_copilot %} for all current and future users in your organization, select **Purchase for all members**.
 1. In the "Confirm seat assignment" dialog, to confirm that you want to enable {% data variables.product.prodname_copilot %} for all current and future users in your organization, click **Confirm**.
 1. To save your changes, click **Save**.
@@ -38,7 +38,6 @@ Depending on the policy settings configured at the enterprise level, an organiza
 {% note %}
 
 **Note:** You can automatically enable access for every member of a group in your identity provider (IdP) by synchronizing that group with a {% data variables.product.prodname_dotcom %} team, then giving that team access to {% data variables.product.prodname_copilot %}.  For more information, see "[AUTOTITLE](/organizations/organizing-members-into-teams/synchronizing-a-team-with-an-identity-provider-group)."
-
 
 {% endnote %}
 {% endif %}
@@ -53,7 +52,7 @@ Depending on the policy settings configured at the enterprise level, an organiza
 1. If you selected **Start from scratch**, click **Add people** or **Add teams** to add individual users, or entire teams.
 1. If you selected **Add people**, in the "Enable {% data variables.product.prodname_copilot %} access for selected members of ORGANIZATION" dialog, you can either search for individual members, or you can add members in bulk by uploading a CSV file.
 
-   ![Screenshot of the enable access for selected members dialog](/assets/images/help/copilot/enable-access-for-selected-members.png)
+   ![Screenshot of the "enable access for selected members" dialog.](/assets/images/help/copilot/enable-access-for-selected-members.png)
 
     - To search for members, type the member's username, full name, or email address in the search bar.
     - To add members in bulk, click **Upload CSV**, and then upload a CSV file including either the username or email address for each member you want to add, separated by a comma.
@@ -87,7 +86,7 @@ Removing a user from the organization(s) that had assigned them a {% data variab
 
 1. Under "Manage access," in the search bar, type the member's username, full name, or email address.
 
-   ![Screenshot of the search bar under "Manage access".](/assets/images/help/copilot/manage-access-search.png)
+   ![Screenshot of the search bar under "Manage access". "Octocat" is entered in the search field.](/assets/images/help/copilot/manage-access-search.png)
 
 1. To remove the member from the list of users who have access to {% data variables.product.prodname_copilot %}, click **Remove** on the right side of the page.
 

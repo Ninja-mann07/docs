@@ -24,7 +24,7 @@ redirect_from:
 
 ## Synopsis
 
-```shell{:copy}
+```shell copy
 codeql dataset check <options>... -- <dataset>
 ```
 
@@ -53,7 +53,7 @@ useful to set it to 0.
 
 Select output format. Possible choices:
 
-`text` *(default)*: A human-readable textual rendering.
+`text` _(default)_: A human-readable textual rendering.
 
 `json`: A streamed JSON array of objects.
 
@@ -63,7 +63,7 @@ Select output format. Possible choices:
 
 \[Advanced] Expend extra effort to compute precise locations for
 inconsistencies. This will take more time, but may make it easier to
-debug extractor behavior.
+debug extractor behaviour.
 
 #### `--max-resolve-depth=<n>`
 

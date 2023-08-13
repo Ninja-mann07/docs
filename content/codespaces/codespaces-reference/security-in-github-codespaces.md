@@ -78,7 +78,7 @@ Codespaces are designed to be security hardened by default. To help maintain thi
 
 ### Using secrets to access sensitive information
 
-Always use encrypted secrets when you want to use sensitive information (such as access tokens) in a codespace. You can access your secrets as environment variables in the codespace, including from the terminal. For example, you can launch a terminal within your codespace and use `echo $SECRET_NAME ` to see the value of a secret.
+Always use encrypted secrets when you want to use sensitive information (such as access tokens) in a codespace. You can access your secrets as environment variables in the codespace, including from the terminal. For example, you can launch a terminal within your codespace and use `echo $SECRET_NAME` to see the value of a secret.
 
 The secret values are copied to environment variables whenever the codespace is resumed or created and are also synced when they are changed.
 
@@ -124,4 +124,6 @@ Any additional {% data variables.product.prodname_vscode_shortname %} extensions
 
 #### Using Settings Sync
 
-{% data variables.product.prodname_vscode_shortname %}'s Settings Sync can allow potentially malicious content to transfer across devices. If you're creating a codespace for a repository whose contents you do not trust, you should open the codespace in the browser and leave Settings Sync disabled.
+{% data variables.product.prodname_vscode_shortname %}'s Settings Sync can allow potentially malicious content to transfer across devices. By default, Settings Sync is disabled for codespaces opened in the browser. If you're creating a codespace for a repository whose contents you do not trust, you should open the codespace in the browser and leave Settings Sync turned off.
+
+If you have enabled Settings Sync in your user preferences, and want to allow changes to your settings to sync from your codespaces to other instances of {% data variables.product.prodname_vscode_shortname %}, we recommend you add a selected list of trusted repositories, rather than trusting all repositories. When you create codespaces from trusted repositories, changes you make to your settings in the codespaces are synced to your cached settings in the cloud, from which they can transfer to your devices. For more information about managing Settings Sync, see "[AUTOTITLE](/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#settings-sync)."

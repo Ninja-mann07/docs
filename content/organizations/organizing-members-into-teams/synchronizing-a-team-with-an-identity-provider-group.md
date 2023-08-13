@@ -43,11 +43,12 @@ When group membership changes on your IdP, your IdP sends a SCIM request with th
 
 Parent teams cannot synchronize with IdP groups. If the team you want to connect to an IdP group is a parent team, we recommend creating a new team or removing the nested relationships that make your team a parent team. For more information, see "[AUTOTITLE](/organizations/organizing-members-into-teams/about-teams#nested-teams)," "[AUTOTITLE](/organizations/organizing-members-into-teams/creating-a-team)," and "[AUTOTITLE](/organizations/organizing-members-into-teams/moving-a-team-in-your-organizations-hierarchy)."
 
-To manage repository access for any {% data variables.product.prodname_dotcom %} team, including teams connected to an IdP group, you must make changes with {% data variables.product.product_name %}. For more information, see "[AUTOTITLE](/organizations/organizing-members-into-teams/about-teams)" and "[AUTOTITLE](/organizations/managing-user-access-to-your-organizations-repositories/managing-team-access-to-an-organization-repository)."
+To manage repository access for any {% data variables.product.prodname_dotcom %} team, including teams connected to an IdP group, you must make changes with {% data variables.product.product_name %}. For more information, see "[AUTOTITLE](/organizations/organizing-members-into-teams/about-teams)" and "[AUTOTITLE](/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/managing-team-access-to-an-organization-repository)."
 
 {% ifversion ghec %}You can also manage team synchronization with the API. For more information, see "[AUTOTITLE](/rest/teams#team-sync)."{% endif %}
 
 {% ifversion ghec %}
+
 ## Requirements for members of synchronized teams
 
 After you connect a team to an IdP group, team synchronization will add each member of the IdP group to the corresponding team on {% data variables.product.product_name %} only if:
@@ -114,6 +115,6 @@ If you disconnect an IdP group from a {% data variables.product.prodname_dotcom 
 {%- elsif ghae %}
 1. Under "Identity Provider Group", to the right of the IdP group you want to disconnect, click {% octicon "x" aria-label="Remove group" %}.
 
-   ![Unselect a connected IdP group from the GitHub team](/assets/images/enterprise/github-ae/teams/unselect-idp-group.png)
+   ![Unselect a connected IdP group from the GitHub team.](/assets/images/enterprise/github-ae/teams/unselect-idp-group.png)
 {%- endif %}
 1. Click **Save changes**.

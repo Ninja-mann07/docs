@@ -61,7 +61,7 @@ console.warn = console.error = (...args) => {
 // Weird import syntax, but forces it to load after process.env... changes
 const { languageKeys } = await import('../../lib/languages.js')
 const { loadPages, loadPageMap } = await import('../../lib/page-data.js')
-const { precompileRedirects } = await import('../../lib/redirects/precompile.js')
+const { precompileRedirects } = await import('../../src/redirects/lib/precompile.js')
 const { allVersions, allVersionKeys } = await import('../../lib/all-versions.js')
 const { getProductStringFromPath } = await import('../../lib/path-utils.js')
 
@@ -125,7 +125,7 @@ for (const page of pages) {
 // Sort by score desc so the translators know what to focus on first
 // Issues with more information should be higher
 issues = issues
-  .filter((issue) => !issue.message?.includes('early-access'))
+  .filter((issue) => !issue.path?.includes('early-access'))
   .sort((a, b) => b.score - a.score || JSON.stringify(b).length - JSON.stringify(a).length)
 
 // Begin an output report
